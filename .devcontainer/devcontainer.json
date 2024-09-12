@@ -4,7 +4,7 @@
       "cpus": 2
     },
     "waitFor": "onCreateCommand",
-    "updateContentCommand": ["/bin/bash", "-c", "conda env create --file environment.yml && source activate matmek4270"],
+    "updateContentCommand": ["/bin/bash", "-c", "conda env create --file environment.yml && source activate matmek4270 && python -m ipykernel install --user --name matmek4270 --display-name 'Python (matmek4270)'"],
     "customizations": {
       "codespaces": {
         "openFiles": []
